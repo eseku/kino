@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import styled from "styled-components";
-import { Spin } from "antd";
+import {Spin} from "antd";
 
 const url =
   "https://api.themoviedb.org/3/discover/movie?api_key=f003a3e2b20875e5ea2272504eb9b98f&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1";
@@ -24,9 +24,9 @@ const Discover = () => {
   }, []);
 
   return (
-    <div>
-      <div style={{ margin: "0 50px" }}>
-        <h2 style={{ color: "white" }}>Recommended For You</h2>
+    <>
+      <div>
+        <h2 style={{color: "white"}}>Recommended For You</h2>
       </div>
       {loading && (
         <div
@@ -36,20 +36,11 @@ const Discover = () => {
             justifyContent: "center"
           }}
         >
-          <Spin size={"large"} style={{ alignSelf: "center" }} />
+          <Spin size="large" style={{alignSelf: "center"}} />
         </div>
       )}
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "nowrap",
-          overflowX: "hidden",
-          marginLeft: "50px",
-          width: "100%"
-        }}
-      >
+      <ImageContainer>
         {movies.map(movie => {
-          movie.poster_path && console.log(movie.poster_path);
           return (
             <div key={movie.id}>
               {movie.poster_path && (
@@ -65,8 +56,8 @@ const Discover = () => {
             </div>
           );
         })}
-      </div>
-    </div>
+      </ImageContainer>
+    </>
   );
 };
 
@@ -74,7 +65,9 @@ export default Discover;
 
 const ImageContainer = styled.div`
   display: flex;
-  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
   -ms-overflow-style: none;
   ::-webkit-scrollbar {
     display: none;

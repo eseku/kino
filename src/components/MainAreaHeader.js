@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar } from "antd";
+import {Avatar} from "antd";
 
 import {
   LeftOutlined,
@@ -17,12 +17,13 @@ const MainAreaHeader = () => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          margin: "50px 50px 50px 50px"
+          outline: "1px solid red",
+          marginBottom: "50px"
         }}
       >
         <div>
-          <LeftOutlined style={{ fontSize: "20px" }} />
-          <RightOutlined style={{ fontSize: "20px" }} />
+          <LeftOutlined style={{fontSize: "20px"}} />
+          <RightOutlined style={{fontSize: "20px"}} />
         </div>
         <div
           style={{
@@ -33,10 +34,10 @@ const MainAreaHeader = () => {
           }}
         >
           <div>
-            <SearchOutlined style={{ fontSize: "20px" }} />
+            <SearchOutlined style={{fontSize: "20px"}} />
           </div>
           <div>
-            <BellOutlined style={{ fontSize: "20px" }} />
+            <BellOutlined style={{fontSize: "20px"}} />
           </div>
           <div
             style={{
@@ -49,19 +50,15 @@ const MainAreaHeader = () => {
             <div>
               <Avatar
                 size={"large"}
-                src={
-                  "https://pixdrive.com/wp-content/uploads/edd/2015/11/woman-avatar-3.png"
-                }
+                src={"https://pixdrive.com/wp-content/uploads/edd/2015/11/woman-avatar-3.png"}
               />
             </div>
-            <div style={{ marginLeft: "10px" }}>
+            <div style={{marginLeft: "10px"}}>
               <div>
-                <p style={{ margin: 0, display: "inline", fontWeight: "bold" }}>
-                  Lucinda Mccarthy
-                </p>
+                <p style={{margin: 0, display: "inline", fontWeight: "bold"}}>Lucinda Mccarthy</p>
               </div>
               <div>
-                <p style={{ margin: 0, fontSize: "10px" }}>Manage Account</p>
+                <p style={{margin: 0, fontSize: "10px"}}>Manage Account</p>
               </div>
             </div>
           </div>

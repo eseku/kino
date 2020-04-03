@@ -1,13 +1,12 @@
 import React from "react";
 import MainAreaHeader from "./MainAreaHeader";
 
-const MainArea = props => {
-  // console.log(props);
+const MainArea = ({children}) => {
   return (
-    <>
+    <div style={{width: "100%"}}>
       <MainAreaHeader />
-      <div>{props.childrenFromMain}</div>
-    </>
+      {children}
+    </div>
   );
 };
 
