@@ -42,7 +42,7 @@ const MainAreaContainer = styled.div`
   background-color: #0d181e;
   // flex-basis: 66.667%;
   color: white;
-  padding: 50px 50px;
+  // padding: 50px 50px;
   height: 100%;
   width: 100%;
 `;

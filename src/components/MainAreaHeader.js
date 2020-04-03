@@ -17,8 +17,7 @@ const MainAreaHeader = () => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          // border: "2px solid white",
-          padding: "20px 0"
+          margin: "50px 50px 50px 50px"
         }}
       >
         <div>
