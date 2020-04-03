@@ -5,9 +5,9 @@ import styled from "styled-components";
 const SideNav = () => {
   return (
     <>
-      <PseudoLoogo>KINDLARE</PseudoLoogo>
+      <PseudoLoogo>KINO</PseudoLoogo>
       <div>
-        <SubHeading>BROWSE KINDLARE</SubHeading>
+        <SubHeading>BROWSE KINO</SubHeading>
         <List>
           <StyledNavLink
             exact

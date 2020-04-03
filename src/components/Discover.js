@@ -43,7 +43,7 @@ const Discover = () => {
         style={{
           display: "flex",
           flexWrap: "nowrap",
-          overflowX: "auto",
+          overflowX: "hidden",
           marginLeft: "50px",
           width: "100%"
         }}
