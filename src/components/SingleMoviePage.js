@@ -11,7 +11,7 @@ const SingleMoviePage = props => {
   React.useEffect(() => {
     axios
       .get(
-        `https://api.themoviedb.org/3/movie/${props.match.params.movieId}?api_key=f003a3e2b20875e5ea2272504eb9b98f&language=en-US`
+        `https://api.themoviedb.org/3/movie/${props.match.params.movieId}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
       )
       .then(response => {
         setMovie(response.data);
@@ -24,7 +24,7 @@ const SingleMoviePage = props => {
   React.useEffect(() => {
     axios
       .get(
-        `https://api.themoviedb.org/3/movie/${props.match.params.movieId}/recommendations?api_key=f003a3e2b20875e5ea2272504eb9b98f&language=en-US`
+        `https://api.themoviedb.org/3/movie/${props.match.params.movieId}/recommendations?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
       )
       .then(response => {
         // console.log(response.data.results);

@@ -4,10 +4,8 @@ import styled from "styled-components";
 import { Spin } from "antd";
 import Movie from "./MovieCard";
 
-const url =
-  "https://api.themoviedb.org/3/discover/movie?api_key=f003a3e2b20875e5ea2272504eb9b98f&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1";
-const sec =
-  "https://api.themoviedb.org/3/discover/movie?api_key=f003a3e2b20875e5ea2272504eb9b98f&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=5";
+const url = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`;
+const sec = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=5`;
 const Discover = () => {
   const [movies, setMovies] = React.useState([]);
   const [onlyOn, setOnlyOn] = React.useState([]);
