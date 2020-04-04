@@ -3,7 +3,7 @@ import styled from "styled-components";
 import SideNav from "./SideNav";
 import MainArea from "./MainArea";
 
-const MainPage = ({children}) => {
+const MainPage = ({ children }) => {
   return (
     <>
       <MainContainer>
@@ -34,7 +34,7 @@ const SideNavArea = styled.section`
   padding: 50px 0;
   color: white;
   height: 100%;
-  outline: 1px solid red;
+  // outline: 1px solid red;
   margin-right: auto;
 `;
 
@@ -45,6 +45,7 @@ const MainAreaContainer = styled.section`
   flex: 0.8;
   padding: 50px;
   width: 100%;
-  outline: 1px solid red;
+  // outline: 1px solid red;
   overflow: hidden;
+  overflow-y: auto;
 `;
